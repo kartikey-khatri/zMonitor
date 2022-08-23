@@ -1,10 +1,10 @@
 ﻿# The config settings are for CSP partners, which need the TenantID as well as SubscriptionID.
 # For non-CSP deployments, the TenantID is not used.
-$TenantID = "<TenantID>"
-$SubscriptionID = "<Tenant SubscriptionID>"
+$TenantID = "8ce7150e-0f63-4365-965a-e5415ec41202"
+$SubscriptionID = "745796f2-5220-43ee-a5c3-763de96a0823"
 $resourceGroupName = "zMonitor"
 $resourceRegion = "West Europe" # Your preferred region
-$templateFilePath = "<FULL PATH TO>\Tenant\oms-all-deploy\azuredeploy.json"
+$templateFilePath = "https://github.com/kartikey-khatri/zMonitor/blob/master/Deploy/Tenant/oms-all-deploy/azuredeploy.json"
 
 # Remove TenantID for non-CSP deployments
 Login-AzureRmAccount -TenantId $TenantID -SubscriptionId $SubscriptionID
