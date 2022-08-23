@@ -24,6 +24,3 @@ else{
 }
 
 New-AzureRmResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateFile $templateFilePath;
-
-
-
